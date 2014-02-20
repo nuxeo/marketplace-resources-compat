@@ -4,6 +4,7 @@
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-ecm</artifactId>
     <version>5.9.2-SNAPSHOT</version>
+    <relativePath></relativePath>
   </parent>
 
   <groupId>org.nuxeo.marketplace</groupId>
@@ -13,7 +14,7 @@
   <name>Marketplace package for Resources Compatibility addon</name>
 
   <properties>
-    <nuxeo.distribution.tools.version>2.0-SNAPSHOT</nuxeo.distribution.tools.version>
+    <nuxeo.distribution.tools.version>2.0</nuxeo.distribution.tools.version>
     <nuxeo.distribution.version>5.9.2-SNAPSHOT</nuxeo.distribution.version>
   </properties>
 
