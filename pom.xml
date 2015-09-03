@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.nuxeo</groupId>
-    <artifactId>nuxeo-ecm</artifactId>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
     <version>7.4-SNAPSHOT</version>
-    <relativePath></relativePath>
+    <relativePath />
   </parent>
 
   <groupId>org.nuxeo.marketplace</groupId>
@@ -14,35 +14,14 @@
   <packaging>zip</packaging>
   <name>Marketplace package for Resources Compatibility addon</name>
 
-  <properties>
-    <nuxeo.distribution.tools.version>2.0</nuxeo.distribution.tools.version>
-    <nuxeo.distribution.version>7.4-SNAPSHOT</nuxeo.distribution.version>
-  </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <!-- Import Nuxeo BOM -->
-      <dependency>
-        <groupId>org.nuxeo.ecm.distribution</groupId>
-        <artifactId>nuxeo-distribution</artifactId>
-        <version>${nuxeo.distribution.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.nuxeo.ecm.platform.resources</groupId>
+      <artifactId>nuxeo-resources-compat</artifactId>
+    </dependency>
+  </dependencies>
 
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.nuxeo.build</groupId>
-          <artifactId>ant-assembly-maven-plugin</artifactId>
-          <version>${nuxeo.distribution.tools.version}</version>
-          <extensions>true</extensions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.nuxeo.build</groupId>

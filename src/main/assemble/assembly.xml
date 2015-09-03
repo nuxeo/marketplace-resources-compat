@@ -20,7 +20,7 @@
     </copy>
 
     <copy todir="${outdir}/marketplace/install/bundles">
-      <artifact:resolveFile key="org.nuxeo.ecm.platform.resources:nuxeo-resources-compat::jar" />
+      <artifact:file key="org.nuxeo.ecm.platform.resources:nuxeo-resources-compat" />
     </copy>
 
     <zip destfile="${outdir}/${maven.project.artifactId}-${maven.project.version}.zip"
