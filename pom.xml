@@ -9,7 +9,7 @@
 
   <groupId>org.nuxeo.marketplace</groupId>
   <artifactId>marketplace-resources-compat</artifactId>
-  <version>1.5.3</version>
+  <version>1.5.4-SNAPSHOT</version>
   <packaging>zip</packaging>
   <name>Marketplace package for Resources Compatibility addon</name>
 
